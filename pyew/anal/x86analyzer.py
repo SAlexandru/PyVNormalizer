@@ -334,8 +334,7 @@ class CX86CodeAnalyzer:
                 break_bb = 1
                 # Follow the flow
                 val, isimport, isbreak = self.resolveAddress(l.operands)
-                self.addXref(l.offset, val)
-                # Register the connection only for the basic block
+                self.addXref(l.offset, val)                # Register the connection only for the basic block
                 bb.addConnection(l.offset, val)
                 
                 if mnem != "JMP" and val < self.pyew.maxsize and val is not None:

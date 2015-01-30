@@ -1,4 +1,4 @@
-#!/usr/bin/python
+t#!/usr/bin/python
 
 """
 This is an example batch script for Pyew. It uses many APIs exported by Pyew like
